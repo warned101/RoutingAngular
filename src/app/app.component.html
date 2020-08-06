@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Welcome to LTI</h1>    
+  </div>
+
+  <div class="topnav">
+    <ul>
+    <li><a [routerLink]="['/homeLink']"> Home </a></li>
+    <li><a [routerLink]="['/registerLink']"> Register </a></li>
+    <li><a [routerLink]="['/loginLink']"> Login </a></li>
+    <li><img src="assets/lti.jpg" style="float: right; padding-right: 20px; height:50px"></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="main">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+ 
+  <div class="footer">
+    <p>© 2020 Larsen & Toubro Infotech Limited</p>
+  </div> 
+
+</body>
+</html>
